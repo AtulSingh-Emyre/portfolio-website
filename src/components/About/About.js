@@ -4,10 +4,20 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+// import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
-
+import Lottie from 'react-lottie';
+import * as animationData from '../HomePageJumbAnimation2.json'
 function About() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData.default,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+  
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -28,10 +38,15 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "60px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <Lottie options={defaultOptions}
+              height={450}
+              // width={60}
+              isStopped={false}
+              isPaused={false}/>
+            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
           </Col>
         </Row>
         <h1 className="project-heading">
@@ -45,7 +60,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
+        {/* <Github /> */}
       </Container>
     </Container>
   );

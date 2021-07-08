@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -14,48 +14,35 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          
+        <Col md={5} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{height:280, width:280, borderRadius:140}} />
+            </Tilt>
+          </Col>
+          <Col md={7} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            Currently doing my B-Tech at <b className="purple">Indian Institute of Technology, Dharwad</b>, I am a coding enthusiast who loves to <b className="purple">develop polished and scalable products</b> which can be used in real-time. 
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in classics like{' '}
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple">Javascript, Python and Java. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My love to code brought my interest in &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Competitive Programming </b> and
+                also in{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                  Full Stack Development.
                 </b>
               </i>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js ans Next.js</b>
-              </i>
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+              </p>
           </Col>
         </Row>
         <Row>

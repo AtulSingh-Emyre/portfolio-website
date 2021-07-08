@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+// import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import Lottie from 'react-lottie';
+import * as animationData from './NavBarAnimation1.json'
 import {
   AiFillStar,
   AiOutlineHome,
@@ -19,7 +21,14 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData.default,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -31,15 +40,25 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          {/* <div className="img-fluid logo"> */}
+          {/* <Lottie options={defaultOptions}
+              height={60}
+              width={60}
+              isStopped={false}
+              isPaused={false}/> */}
+
+          {/* </div> */}
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -116,6 +135,7 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 }
 
