@@ -33,6 +33,7 @@ function Projects() {
             <ProjectCard
               techStack={[' react-native ',' NodeJS ',' TypeScript ']}
               role={[' Owner ']}
+              featured={true}
               selectProject = {handleSelectProject}
               imgPath={Tradycoon}
               isBlog={false}
@@ -45,6 +46,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               techStack={['ReactJS','NodeJS','TypeScript']}
+              featured={true}
               selectProject = {handleSelectProject}
               imgPath={Gymkhana}
               role={['Full Stack Developer','Team Lead']}
