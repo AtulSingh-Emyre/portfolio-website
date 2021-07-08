@@ -1,3 +1,6 @@
 .projectModalContainerStyles {
     min-width: 95%;
 }
+.whitebg {
+    background-color: white;
+}

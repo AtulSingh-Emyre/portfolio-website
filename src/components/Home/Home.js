@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import './styles.css';
@@ -29,7 +28,7 @@ function Home() {
           <Row style={{paddingTop:0,marginTop:0}}>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 5 }} className="heading">
-                Hi There! <span className="wave">👋🏻</span>
+                Heyy! <span className="wave">👋🏻</span>
               </h1>
 
               <h1 className="heading-name">

@@ -6,9 +6,6 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import Lottie from 'react-lottie';
-import * as animationData from './NavBarAnimation1.json'
 import {
   AiFillStar,
   AiOutlineHome,
@@ -21,14 +18,6 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const defaultOptions = {
-    loop: true,
-    autoplay: true, 
-    animationData: animationData.default,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  };
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
