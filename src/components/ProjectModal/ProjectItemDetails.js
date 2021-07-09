@@ -10,7 +10,7 @@ const ProjectItemDetails = ({projectId}) => {
                     <DetailsContainer id={projectId}/>
                 </Col> 
                 <Col xl={12} md={12} sm={12} style={{margin:'auto'}}>
-                 {/* //   <ImageContainer projectId={projectId} /> */}
+                 <ImageContainer projectId={projectId} />
                 </Col>
             </Row>
         </div>

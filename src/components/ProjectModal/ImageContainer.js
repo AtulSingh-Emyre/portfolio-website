@@ -1,20 +1,21 @@
 import React from 'react';
-// import ResponsiveGallery from 'react-responsive-gallery'
+import ResponsiveGallery from 'react-responsive-gallery'
 import Gallery from 'react-grid-gallery';
 
 import {getProjectImages} from '../constants/projectImageConstants'
 const ImageContainer = ({projectId}) => {
-    const projectImages = getProjectImages(projectId) || []; 
+    const projectImages = getProjectImages(projectId)? getProjectImages(projectId): []; 
+    console.log(projectId, projectImages);
     console.log(projectImages);
     return (
         <div styles={{backgroundColor:'white'}}>
-            {/* <ResponsiveGallery 
+            <ResponsiveGallery 
             useLightBox={true} 
             images={projectImages}
             numOfImagesPerRow={{xs: 1,s: 1,m: 2,l: 2,xl: 2, xxl:3}}
             colsPadding={{xs: 0,s: 0,m: 0,l: 0,xl: 0, xxl:0}}
             imageMaxWidth={{xs: 100,s: 100,m: 100,l: 100,xl: 150, xxl:250}}
-            />, */}
+            />,
             <Gallery
             images={projectImages}
             enableImageSelection={false}

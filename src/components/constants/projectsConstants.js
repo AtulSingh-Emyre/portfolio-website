@@ -11,6 +11,7 @@ export const projectsListValue = {
   PARSEC: {
     name: 'PARSEC',
     link: {
+      name: 'View Website',
       value: 'https://parsec.iitdh.ac.in/'
     },
     tech: ['Annual Tech Fest','IIT Dharwad','2020'],
@@ -57,6 +58,7 @@ export const projectsListValue = {
   'Summer of Innovation' :{
       name: 'Summer Of Innovation',
       link: {
+        name: 'View Website',
         value: 'https://oss2019.github.io/summer-of-innovation-2021/#/'
       },
       github: {
@@ -109,6 +111,7 @@ export const projectsListValue = {
     tech: [`Freshers' coding event`,'IIT Dharwad','2020'],
     involvement: 'Head Organizer',
     link: {
+      name: 'View Website',
       value: 'https://www.hackerrank.com/code-2-0'
     },
     // //icon: bijli//Icon,
@@ -175,6 +178,7 @@ export const projectsListValue = {
     //icon: wakency//Icon,
     involvement: 'Team Lead and Full Stack MERN Developer',
     link: {
+      name: 'View Project',
       value: 'https://gymkhanaiitdh.herokuapp.com/'
     },
     github: {
@@ -274,7 +278,7 @@ export const projectsListValue = {
     //icon: vcMusicPlayer//Icon,
     involvement: 'Owned',
     link: {
-      type: 'download',
+      name: 'Download App',
       value: 'https://drive.google.com/open?id=1Fo3FSfu7NHTJ60Y0uQcWYpv6mX1Tetqe'
     },
     description: [

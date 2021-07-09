@@ -1,15 +1,152 @@
-import snapTeam1 from '../../Assets/images/projectImages/snapteam/1.png';
-import snapTeam2 from '../../Assets/images/projectImages/snapteam/2.png';
-import snapTeam3 from '../../Assets/images/projectImages/snapteam/3.png';
-import snapTeam4 from '../../Assets/images/projectImages/snapteam/4.png';
-import snapTeam5 from '../../Assets/images/projectImages/snapteam/5.png';
-import snapTeam6 from '../../Assets/images/projectImages/snapteam/6.png';
-import snapTeam7 from '../../Assets/images/projectImages/snapteam/7.png';
-import snapTeam8 from '../../Assets/images/projectImages/snapteam/8.png';
+import PARSEC1 from '../../Assets/images/projectImages/Parsec/1.jpg';
+import PARSEC2 from '../../Assets/images/projectImages/Parsec/2.jpg';
+import PARSEC3 from '../../Assets/images/projectImages/Parsec/3.jpg';
+import PARSEC4 from '../../Assets/images/projectImages/Parsec/4.jpeg';
+import PARSEC5 from '../../Assets/images/projectImages/Parsec/5.jpeg';
+import PARSEC6 from '../../Assets/images/projectImages/Parsec/6.jpeg';
+
+import CD1 from '../../Assets/images/projectImages/Codeathon/1.jpg';
+import CD2 from '../../Assets/images/projectImages/Codeathon/2.jpg';
+import CD3 from '../../Assets/images/projectImages/Codeathon/3.jpg';
+import CD4 from '../../Assets/images/projectImages/Codeathon/4.jpg';
+
+import SOI1 from '../../Assets/images/projectImages/Summer of Innovation/1.jpg';
+import SOI2 from '../../Assets/images/projectImages/Summer of Innovation/2.jpg';
+import SOI3 from '../../Assets/images/projectImages/Summer of Innovation/3.jpg';
+import SOI4 from '../../Assets/images/projectImages/Summer of Innovation/4.jpg';
+import SOI5 from '../../Assets/images/projectImages/Summer of Innovation/5.jpg';
+
+
+import IITC1 from '../../Assets/images/projectImages/IITC/1.jpeg';
+import IITC2 from '../../Assets/images/projectImages/IITC/2.jpeg';
+import IITC3 from '../../Assets/images/projectImages/IITC/3.jpeg';
+
+
+import snapTeam1 from '../../Assets/images/projectImages/Gymkhana/1.jpg';
+import snapTeam2 from '../../Assets/images/projectImages/Gymkhana/2.jpg';
+import snapTeam3 from '../../Assets/images/projectImages/Gymkhana/3.jpg';
+import snapTeam4 from '../../Assets/images/projectImages/Gymkhana/4.jpg';
+import snapTeam5 from '../../Assets/images/projectImages/Gymkhana/5.jpg';
+import snapTeam6 from '../../Assets/images/projectImages/Gymkhana/6.jpg';
 
 
 const projectImages = {
-  snapteam: 
+
+  "Inter IIT Tech Collaboration": [
+    {
+      src: IITC1, 
+      thumbnail: IITC1,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },
+    {
+      src:IITC2,
+      thumbnail: IITC2,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+    {
+      src:IITC3,
+      thumbnail: IITC3,
+      thumbnailWidth: 220,
+      thumbnailHeight: 200
+    },
+    
+  ],
+  'Summer of Innovation': [
+    {
+      src: SOI1, 
+      thumbnail: SOI1,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },{
+      src: SOI2, 
+      thumbnail: SOI2,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },{
+      src: SOI3, 
+      thumbnail: SOI3,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },{
+      src: SOI4, 
+      thumbnail: SOI4,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },{
+      src: SOI5, 
+      thumbnail: SOI5,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },
+  ],
+  Codeathon: [
+    {
+      src: CD1, 
+      thumbnail: CD1,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },
+    {
+      src:CD2,
+      thumbnail: CD2,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+    {
+      src:CD3,
+      thumbnail: CD3,
+      thumbnailWidth: 220,
+      thumbnailHeight: 200
+    },
+    {
+      src:CD4,
+      thumbnail: CD4,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    }
+  ],
+  PARSEC: [
+    {
+      src: PARSEC1, 
+      thumbnail: PARSEC1,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },
+    {
+      src:PARSEC2,
+      thumbnail: PARSEC2,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+    {
+      src:PARSEC3,
+      thumbnail: PARSEC3,
+      thumbnailWidth: 220,
+      thumbnailHeight: 200
+    },
+    {
+      src:PARSEC4,
+      thumbnail: PARSEC4,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+    {
+      src:PARSEC5,
+      thumbnail: PARSEC5,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+    {
+      src:PARSEC6,
+      thumbnail: PARSEC6,
+      thumbnailWidth: 120,
+      thumbnailHeight: 150
+    },
+  ],
+
+  'Gymkhana Website': 
   [
     {
       src:snapTeam1, 
@@ -46,34 +183,15 @@ const projectImages = {
       thumbnail: snapTeam6,
       thumbnailWidth: 120,
       thumbnailHeight: 150
-    },
-    {
-      src:snapTeam7,
-      thumbnail: snapTeam7,
-      thumbnailWidth: 120,
-      thumbnailHeight: 150
-    },
-    {
-      src:snapTeam8,
-      thumbnail: snapTeam8,
-      thumbnailWidth: 120,
-      thumbnailHeight: 150
-    },
+    }
   ],
-  pulse: require.context(`../../Assets/images/projectImages/pulse`, false, /.*\.png$/),
-  measure: require.context(`../../Assets/images/projectImages/measure`, false, /.*\.png$/),
-  wakency: require.context(`../../Assets/images/projectImages/wakency`, false, /.*\.png$/),
-  benefactory: require.context(`../../Assets/images/projectImages/benefactory`, false, /.*\.png$/),
-  lighthouse: require.context(`../../Assets/images/projectImages/lighthouse`, false, /.*\.png$/),
-  nykaa: require.context(`../../Assets/images/projectImages/nykaa`, false, /.*\.png$/),
-  Tradycoon: require.context(`../../Assets/images/projectImages/Tradycoon`, false, /.*\.png$/)
 };
 
 export const getProjectImages = id => {
   if (!id) return [];
 
   const images = projectImages[id];
-  return images;
+  return images? images: [];
 };
 
 // used to explicitly specify a image ratio to be show in grid
