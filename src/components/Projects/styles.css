@@ -3,4 +3,9 @@
 }
 .whitebg {
     background-color: white;
+    max-width: 300px;
+}
+.fixes{
+    padding-bottom: 0;
+    max-width: 250px;
 }

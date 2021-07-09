@@ -7,27 +7,27 @@ import axios from "axios";
 import pdf from "../../Assets/Soumyajit-Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
+const details = {
+  leetCode : {
+    rating: 1794,
+    contests: 28,
+    'problems solved': 311,
+    Acceptance: '59.0%',
+    profile: 'https://leetcode.com/Emyre/'
+  },
+  codeForces : {
+    rating: 1239,
+    contests: 5,
+    'problems solved': 56,
+    profile: 'https://codeforces.com/profile/190020009'
+  },
+  sem: {
+    cpi: 9.28,
+    courses: ['number theory','computer programming','Data Structures and Algorithms']
+  }
+}
+
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
-
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
   return (
     <Container fluid className="resume-section">
       <Particle />
@@ -40,54 +40,93 @@ function Resume() {
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">Organizations</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
-              date="June 2020 - August 2020"
+              title="OSS | Owner"
+              date="May 2021 - present"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
-              ]}
-            />
-            <h3 className="resume-title">Extracurricular Activities</h3>
-            <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
-              content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+                "Promoted to Owner of the Open Student Society Organization on Github as on May 2021",
               ]}
             />
             <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
+              title="Coding Club | Member"
+              date="September 2019 - present"
               content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+                "Member and contributor of The Coding Club at IIT Dharwad",
+              ]}
+            />
+            <h3 className="resume-title">Position of Responsibilities</h3>
+            <Resumecontent
+              title="General Secretary, Technical Affairs - IIT Dharwad"
+              date={'May 2021 - present'}
+              content={[
+                "Responsible to oversee all the Technical Activities at our College at the lifecycle level",
+                "Organizing various events on behalf of the Technical Council",
+                "Interacting with Industry experts to host collaborations with the institute",
+                "Allocating and Supervising fundings for the clubs"
+              ]}
+            />
+            <Resumecontent
+              title="Inter-IIT Contingent Leader, IIT Dharwad"
+              date={'Jan 2021 - March 2021'}
+              content={[
+                "Contingent Leader of all the teams that took part in the Inter IIT 2021 at IIT Guwahati from our Insitute",
+                "Managing and selecting teams for taking part in the various problem statements available",
+                "Representing our Institute at the event, Managing the flow of submissions from our Insitute."
+              ]}
+            />
+            <Resumecontent
+              title="Student Mentor, IIT Dharwad"
+              date= {'Aug 2020 - July 2021'}
+              content={[
+                "Mentoring a group of 6 freshers at our Insitute",
+                "Giving a technical background and supporting the mentees in terms of academics, lifestyles as well as recommending career paths.",
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="Indian Institute of Technology, Dharwad"
+              date="2019 - Present"
+              content={[`CGPA: ${details.sem.cpi} (Till 4th Sem)`,`Prominent Courses: ${details.sem.courses.join(' | ')}`]}
+              courses={details.sem.courses}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
+              title="12TH BOARD [Bangalore International Academy, Bangalore]"
+              date="2017 - 2019"
+              content={["Precentage: 94%"]}
             />
             <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
+              title="10TH BOARD [The Oxford Senior Secondary School,Bangalore] "
+              date="2007 - 2017"
+              content={["Precentage: 10 CGPA"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
-              title=""
+              title="LeetCode"
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                `Current rating: ${details.leetCode.rating}`,
+                `Number of Contests: ${details.leetCode.contests}`,
+                `Acceptance rate: ${details.leetCode.Acceptance}`,
+                `Number of problems solved: ${details.leetCode["problems solved"]}`,
+              ]}
+            />
+            <Resumecontent
+              title="Codeforces"
+              content={[
+                `Current rating: ${details.codeForces.rating}`,
+                `Number of Contests: ${details.codeForces.contests}`,
+                `Number of problems solved: ${details.codeForces["problems solved"]}`,
+              ]}
+            />
+            <Resumecontent
+              title="Inter-IIT Tech Meet 2021"
+              content={[
+                `Bronze in ASTROSAT's space recognition problem statement`,
+                `National level event with all IITs taking part, one team per IIT`,
+                `Was the team lead and also one of the 4 presenters from our institute`,
+                `Problem statement involved web development and data analysis`,
               ]}
             />
           </Col>

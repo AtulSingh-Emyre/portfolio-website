@@ -11,15 +11,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
-      <Container>
+    // <Container fluid className="home-about-section" id="about">
+       <Container> 
         <Row>
           
-        <Col md={5} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{height:280, width:280, borderRadius:140}} />
-            </Tilt>
-          </Col>
           <Col md={7} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
@@ -43,6 +38,12 @@ function Home2() {
               </i>
               <br />
               </p>
+          </Col>
+          
+        <Col md={5} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{height:280, width:280, borderRadius:140}} />
+            </Tilt>
           </Col>
         </Row>
         <Row>
@@ -95,7 +96,7 @@ function Home2() {
             </ul>
           </Col>
         </Row>
-      </Container>
+      {/* </Container> */}
     </Container>
   );
 }

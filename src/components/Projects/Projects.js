@@ -6,7 +6,65 @@ import './styles.css'
 import Gymkhana from "../../Assets/Projects/Gymkhana.png";
 import Tradycoon from "../../Assets/Projects/Tradycoon.png";
 import ProjectItemDetails from "../ProjectModal/ProjectItemDetails";
-
+import REST from "../../Assets/Projects/REST.png";
+import BlogsCards from "./BlogsCards";
+import PARSEC from "../../Assets/Projects/PARSEC2019.jpg";
+import SOI2021 from "../../Assets/Projects/SOI2021.jpg";
+import Codeathon from "../../Assets/Projects/Codethon1.2.jpg";
+const ProjectConstants = [
+  {
+  techStack:[' react-native ',' NodeJS ',' TypeScript '],
+  role:[' Owner '],
+  featured:true,
+  imgPath:Tradycoon,
+  title:"Tradycoon"
+  },
+  {
+    techStack:['ReactJS','NodeJS','TypeScript'],
+    role:['Full Stack Developer','Team Lead'],
+    featured:true,
+    imgPath:Gymkhana,
+    title:"Gymkhana Website"
+  },
+  {
+    techStack:['NodeJS','TypeScript','MongoDB'],
+    role:['Owner'],
+    featured:true,
+    imgPath:REST,
+    title:"REST API"
+  },
+];
+const ManagementConstants = [
+  {
+    desc:['Annual Tech Fest'],
+    sub:['IIT Dharwad','2019'],
+    role:['Marketing Team'],
+    featured:true,
+    imgPath:PARSEC,
+    title:"PARSEC"
+  },{
+    desc:['Freshers Coding Event'],
+    sub:['IIT Dharwad','2019'],
+    role:['Organizer'],
+    featured:false,
+    imgPath:Codeathon,
+    title:"Codeathon"
+  },{
+    desc:['Technical Event Marathon'],
+    sub:['IIT Dharwad','2021'],
+    role:['Organizer'],
+    featured:true,
+    imgPath:SOI2021,
+    title:"Summer of Innovation"
+  },{
+    desc:['Collaborative Event between IITs'],
+    sub:['Inter - IIT Event','2021'],
+    role:['Organizer'],
+    featured:true,
+    imgPath:SOI2021,
+    title:"Inter IIT Tech Collaboration"
+  },
+]
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -23,40 +81,40 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Tech Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {
+            ProjectConstants.map(item => (<Col md={4} className="project-card">
             <ProjectCard
-              techStack={[' react-native ',' NodeJS ',' TypeScript ']}
-              role={[' Owner ']}
-              featured={true}
+              {...item}
               selectProject = {handleSelectProject}
-              imgPath={Tradycoon}
-              isBlog={false}
-              title="Tradycoon"
-              description={["A Trading application which I developed while in college."," The Application is available for download on both - Android and IOS.","The application aims to provide a platform to the Analysts and Traders in our country to easen their business and also aims to educate those who are new to trading."]}
-              link=""
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              techStack={['ReactJS','NodeJS','TypeScript']}
-              featured={true}
-              selectProject = {handleSelectProject}
-              imgPath={Gymkhana}
-              role={['Full Stack Developer','Team Lead']}
-              isBlog={false}
-              title="Gymkhana Website"
-              description={["The website is the Official Website of the Student Activity Center (Gymkhana) of IIT Dharwad","As the lead of a team of 6, I was responsible to work over the entire lifecycle of the website, from its illustrations in design tools to its final deployment over the official domain in our college."]}
-              link=""
-            />
-          </Col>
+          ))
+          }
           </Row>
+        <h1 className="project-heading">
+          My{' '} <strong className="purple"> Management </strong> {' '}Related Work
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are a few events which I have hosted/been a part of the organizing team.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {
+            ManagementConstants.map(item => (<Col md={4} className="project-card">
+              <BlogsCards
+                {...item}
+                selectProject = {handleSelectProject}
+              />
+            </Col>
+            ))
+          }
+        </Row>
+          
         <Modal show={show} onHide={handleClose} dialogClassName={'projectModalContainerStyles'}>
         <Modal.Body>
           <Container>
