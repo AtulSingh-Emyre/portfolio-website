@@ -11,7 +11,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    // <Container fluid className="home-about-section" id="about">
        <Container> 
         <Row>
           
@@ -96,7 +95,6 @@ function Home2() {
             </ul>
           </Col>
         </Row>
-      {/* </Container> */}
     </Container>
   );
 }
