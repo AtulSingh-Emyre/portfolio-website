@@ -6,7 +6,7 @@ import {AiFillStar} from 'react-icons/ai'
 import './styles.css';
 function ProjectCards(props) {
   const handleClick = () => {
-    props.selectProject('snapteam')
+    props.selectProject(props.title)
   }
   return (
     <Card className="project-card-view whitebg" onClick={handleClick} style={{cursor:'pointer'}}>

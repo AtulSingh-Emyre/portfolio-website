@@ -11,6 +11,8 @@ import BlogsCards from "./BlogsCards";
 import PARSEC from "../../Assets/Projects/PARSEC2019.jpg";
 import SOI2021 from "../../Assets/Projects/SOI2021.jpg";
 import Codeathon from "../../Assets/Projects/Codethon1.2.jpg";
+
+import IITC from "../../Assets/Projects/IITC.jpeg";
 const ProjectConstants = [
   {
   techStack:[' react-native ',' NodeJS ',' TypeScript '],
@@ -37,7 +39,7 @@ const ProjectConstants = [
 const ManagementConstants = [
   {
     desc:['Annual Tech Fest'],
-    sub:['IIT Dharwad','2019'],
+    sub:['IIT Dharwad','2020'],
     role:['Marketing Team'],
     featured:true,
     imgPath:PARSEC,
@@ -61,7 +63,7 @@ const ManagementConstants = [
     sub:['Inter - IIT Event','2021'],
     role:['Organizer'],
     featured:true,
-    imgPath:SOI2021,
+    imgPath:IITC,
     title:"Inter IIT Tech Collaboration"
   },
 ]

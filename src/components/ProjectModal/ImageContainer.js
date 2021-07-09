@@ -4,7 +4,7 @@ import Gallery from 'react-grid-gallery';
 
 import {getProjectImages} from '../constants/projectImageConstants'
 const ImageContainer = ({projectId}) => {
-    const projectImages = getProjectImages(projectId); 
+    const projectImages = getProjectImages(projectId) || []; 
     console.log(projectImages);
     return (
         <div styles={{backgroundColor:'white'}}>

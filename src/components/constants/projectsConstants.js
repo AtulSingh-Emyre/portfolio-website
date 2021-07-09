@@ -8,34 +8,32 @@
 // import vcMusicPlayer//Icon from '//Icons/project-//icon-vc-music-player.png';
 
 export const projectsListValue = {
-  snapteam: {
-    name: 'Snapteam/Bijli',
-    tech: ['react', 'electron', 'laravel'],
-    involvement: 'Major',
+  PARSEC: {
+    name: 'PARSEC',
+    link: {
+      value: 'https://parsec.iitdh.ac.in/'
+    },
+    tech: ['Annual Tech Fest','IIT Dharwad','2020'],
+    involvement: 'Marketing Team',
     // //icon: bijli//Icon,
     description: [
       {
         type: 'text',
         highlight: 'green',
-        value: 'Bijli is a Project management and communication App which helps reduce communication noise within teams, and provide useful metric to make real time decisions.'
+        value: `PARSEC 2020 was the first Annual Technical fest of IIT Dharwad. The event was successfully held in Feb 2020 for 3 days and had about 1.8k participants visiting from all over India. It aimed to bring together the technical community under a single roof.` 
       },
       {
         type: 'points',
-        highlight: 'green',
-        title: 'The intention for bijli was to have a cross-platform product working on Web, Desktop, Android, iOS, Slack platforms having these core features :',
+        title: 'The various events hosted under the fest included:',
         value: [
-          'Check-in Mechanism',
-          'To-Do management',
-          'Notification & Updates',
-          'Feedback Engine',
-          'Reservation System',
-          'Real-Time Insights'
+          'DevHack 2.0: A hardware and software hackathon',
+          'Synergia: Robotics problem statement',
+          'AlgoStrike: Competitive Coding Event',
+          'CTF: Capture the Flag - hosted on International level',
+          'Workshops: Several workshops on tech like ML and AI',
+          'QUIZ and other recreation events',
+          'Tech related talks over a wide range of topics'
         ]
-      },
-      {
-        type: 'text',
-        highlight: 'green',
-        value: 'This Project was also displayed on tech crunch 2018.'
       },
       {
         type: 'header',
@@ -43,47 +41,150 @@ export const projectsListValue = {
       },
       {
         type: 'text',
-        value: 'In Bijli I mostly worked on React and Electron, and worked with Laravel for one feature.<br/>Have Architectured Home page components to connect with other tabs which communicate with each other and handle realtime data updates.',
+        value: 'In PARSEC, I mainly worked on the marketing and outreach activities which included:',
       },
       {
         type: 'points',
-        title: 'These are some feature complexity faced and technology used :',
         value: [
-          'Electron and Web build process with webpack',
-          "A custom made Compose flow (Drafting messages, tagging, file attachments, etc)",
-          'Pusher implementation for real time data updates',
-          'Css in js implementation with aphrodite',
-          'Worked with string replace to add functionality to a part of a string',
-          'Redux-api-middleware',
-          'React-Router-v4',
-          'React-redux-form',
-          'Aphrodite',
-          'Redux-api-middleware',
-          'Material-UI',
-          'Firebase',
-          'Redux',
-          'React-Router',
-          'Redux-Form',
-          'Css Modules'
+          'Inviting Institutes from all over the country to be a part of the fest',
+          'Strategizing the relevant procedures to reach out to a greater audience',
+          'Marketing with ads over instagram, facebook and LinkedIn',
+          'Giving presentations about the fest in other Institutes in Dharwad',
+        ]
+      }
+    ]
+  },
+  'Summer of Innovation' :{
+      name: 'Summer Of Innovation',
+      link: {
+        value: 'https://oss2019.github.io/summer-of-innovation-2021/#/'
+      },
+      github: {
+        value: 'https://github.com/oss2019/summer-of-innovation-2021'
+      },
+      tech: ['Tech Marathon','Open Student Society','IIT Dharwad','2021'],
+      involvement: 'Overall Coordinator',
+      // //icon: bijli//Icon,
+      description: [
+        {
+          type: 'text',
+          highlight: 'green',
+          value: `Summer of Innovation was a 3 month long technical marathon conducted between May 2021 and August 2021. It included problem statements from several technical domains and was conducted completely virtually.` 
+        },
+        {
+          type: 'points',
+          title: 'The problem statements hosted included:',
+          value: [
+            'Web development Hackathon',
+            'Robotics Simulation',
+            'Case Study',
+            'Sentiment Analysis',
+            'Twitter Bot for IPL Updates',
+            'Object recognition',
+            'Image Classification',
+            'Competitive Coding Event'
+          ]
+        },
+        {
+          type: 'header',
+          value: 'My Contribution :',        
+        },
+        {
+          type: 'text',
+          value: 'As the Overall Coordinator, I was incharge of overseeing the event from start to finish. I was also responsible for the maintaining the budget for the event and supervising all the problem statements. My other responsibilities included:',
+        },
+        {
+          type: 'points',
+          value: [
+            'Communicating between the organizing team and the College Management Side for smooth conduction of the event',
+            'Keeping track of registrations and submissions',
+            'Took care of testing and bug fixes of the event website',
+            'Integrating and appointing the Mentors and Coordinators of each problem statement from the Technical Clubs',
+          ]
+        }
+      ]
+    },
+  Codeathon: {
+    name: 'Codeathon',
+    tech: [`Freshers' coding event`,'IIT Dharwad','2020'],
+    involvement: 'Head Organizer',
+    link: {
+      value: 'https://www.hackerrank.com/code-2-0'
+    },
+    // //icon: bijli//Icon,
+    description: [
+      {
+        type: 'text',
+        highlight: 'green',
+        value: `A competitive Coding event for all the freshers at IIT Dharwad. The event aimed to bring enthusiasm towards coding and inculcate coding culture in the students. The event was conducted on Hackerrank and was 6hrs long.` 
+      },
+      {
+        type: 'header',
+        value: 'My Contribution :',        
+      },
+      {
+        type: 'text',
+        value: 'As the head organizer in the event, I was responsible for overseeing the event from start to finish. My responsibilities included:',
+      },
+      {
+        type: 'points',
+        value: [
+          'Overseeing the creation of the contest problems',
+          'Testing the test cases of 3 out of 6 problems.',
+          'Managing the participants data, ranking and queries.',
+          'Complete top level management of the event.',
+        ]
+      }
+    ]
+  },
+  'Inter IIT Tech Collaboration': {
+    name: 'Inter IIT Tech Collaboration',
+    tech: [`Monthly Technical Events`,'PAN IIT','2021'],
+    involvement: 'Member organizer',
+    // //icon: bijli//Icon,
+    description: [
+      {
+        type: 'text',
+        highlight: 'green',
+        value: `Currently spanning 12 IITs in our country, the initiative aims to conduct tech related events on a monthly basis with each event being the host for 1 month. The events cover a wide variety of technical domains from competitive programming to case study and game development.` 
+      },
+      {
+        type: 'header',
+        value: 'My Contribution :',        
+      },
+      {
+        type: 'text',
+        value: 'As the General Secretary Technical Affairs of our institute, I was a part of the 12 member committee as a representative from my institute. My responsibilities include:',
+      },
+      {
+        type: 'points',
+        value: [
+          'Overseeing the participation in the event from IIT Dharwad',
+          'Being the connecting link between IIT Dharwad community and event',
+          'Managing the participant queries from IIT Dharwad',
+          'Managing the complete lifecycle of conduction of event in July 2021',
         ]
       }
     ]
   },
   
-  wakency: {
-    name: 'Wakency',
-    tech: ['react'],
+  'Gymkhana Website': {
+    name: 'Gymkhana Website',
+    tech: ['React JS','TypeScript','MongoDB','Node JS'],
+    tags: ['React JS','TypeScript','MongoDB','Node JS','React-Router','React-Redux','flux frontend architecture','MVC server architecture','Authentication'],
     //icon: wakency//Icon,
-    involvement: 'Intermittent',
+    involvement: 'Team Lead and Full Stack MERN Developer',
     link: {
-      type: 'visit',
-      value: 'https://www.wakency.com/'
+      value: 'https://gymkhanaiitdh.herokuapp.com/'
+    },
+    github: {
+      value: 'https://github.com/IIT-Dharwad-Tech/Gymkhana'
     },
     description: [
       {
         type: 'text',
         highlight: 'green',
-        value: 'Wakency has been built to address the changing work culture of our times, to be India’s first on-demand flexible work platform that uses proprietary technology to automate making the perfect match between temporary workers and employers.'
+        value: 'The Gymkhana Website is the official Student-Activities (aka Gymkhana Activities) Website of IIT Dharwad. The website is hosted on the official domain of the institute and is being used live.'
       },
       {
         type: 'header',
@@ -91,218 +192,78 @@ export const projectsListValue = {
       },
       {
         type: 'text',
-        value: 'I worked on the front-end web and developed the landing pages and few features within the app. '
+        value: 'As the Team Lead, my work included modularization and distribution of tasks to the 6 team members as well as overseeing the entire lifecycle of the website. In development, I worked mainly on:'
       },
       {
         type: 'points',
         value: [
           'Worked with css-modules',
-          'Firebase Notification',
-          'Redux',
-          'Redux-api-middleware',
-          'React-redux-form',
-          'React-Router v3',
-          'Slick and swiper.js for carousel'
+          'making the UI responsive',
+          'Google Sign-in and Authentication',
+          'Crud operations for event objects',
+          'Structuring the models of data',
+          'React-Redux and complete Redux-api-middleware',
+          'UI component for the Student Activity Calendar',
+          'Server side controller business logic',
+          'Server side error handling',
+          'Deployment of the webapp on the official domain'
         ]
-      }
-    ]
-  },
-  nykaa: {
-    name: 'Nykaa',
-    tech: ['react'],
-    //icon: nykaa//Icon,
-    involvement: 'Intermittent',
-    link: {
-      type: 'visit',
-      value: 'https://www.nykaa.com/'
-    },
-    description: [
-      {
-        type: 'text',
-        highlight: 'green',
-        value: "Nykaa is an e-commerce website offering beauty and wellness products from more than 500 leading brands. <br/><br/>Nykaa follows an inventory-based model with warehouses in Mumbai, New Delhi, and Chennai as its offline presence is in 60 stores and expanding"
       },
       {
         type: 'header',
-        value: 'My Contribution :',        
+        value: 'Features :',        
       },
       {
         type: 'text',
-        value: 'I was actively involved in building new features like new signup/signin flow, had introduced a AR makeup try-on using Modi-face for the iOS webview with stage releases.<br/>Also maintained entire Nykaa Pro module while working on these new features.'
-      },
-      {
+        value: 'The website is responsible for maintaining the data of all the events occuring as a part of the student activity at the institute. Its features included: ',        
+      },{
         type: 'points',
         value: [
-          'New mobile signup/signin flow',
-          'Trending Search and Search history',
-          'Nykaa Pro',
-          'Worked on a AR makeup try-on with modiface',
-          'Unit test cases with jest'
-        ]
-      }
-    ]
-  },
-  pulse: {
-    name: 'Pulse/Sprout',
-    tech: ['react-native'],
-    //icon: pulse//Icon,
-    involvement: 'Major',
-    link: {
-      type: 'visit',
-      value:  'https://www.youtube.com/watch?v=wOsy7b2Q-J4'
-    },
-    description: [
-      {
-        type: 'text',
-        highlight: 'green',
-        value: 'Sprout is a delivery kitchen that aims to serve delicious meals, while cutting the long wait associated with them. It is a subscription based service with a clear detail of ingredients that is customizable and changes daily.'
-      },
-      {
-        type: 'text',
-        highlight: 'green',
-        value: 'The purpose of the Sprout app users is to quickly and conveniently book meals from Sprout.<br/> It was not published due to some business operation issue on the clients end.'
-      },
-      {
-        type: 'header',
-        value: 'My Contribution :',        
-      },
-      {
-        type: 'text',
-        value: 'Created this apps component architecture and Api calls system with Redux middleware and Axios so that it would automatically handle common responses and make api implementation simple and easy on each screen.<br/>Also worked on the Apps flows and screens which include Login flow, Meal selection flow and Home flow.'
-      },
-      {
-        type: 'points',
-        value: [
-          'Redux',
-          'Axios',
-          'RN Razorpay',
-          'RN Navigation (Wix)',
-          "RN Swiper",
-          'RN Facebook sdk',
-          'RN Fabric (Crash Reporting)',
-          'RN Branch (Deeplinking)',
-          'RN Firebase'
+          'Calendar to display all the upcoming and previously occured events and deadlines',
+          'Contact information of the office bearers',
+          'Responsive UI',
+          'Archive of previous archive bearers',
+          'Authentication and login for the office bearers',
+          'CRUD operations for the events for logged in users',
+          'Automated Support emails with user queries',
+          'Notice board for upcoming events and annoucements',
+          'Gymkhana Constitution',
+          'responsive UI'
         ]
       },
-    ]
-  },
-  lighthouse: {
-    name: 'LightHouse Project',
-    tech: ['react-native'],
-    //icon: lighthouse//Icon,
-    involvement: 'Major',
-    link: {
-      type: 'download',
-      value: 'https://play.google.com/store/apps/details?id=com.tailoredtech.lighthouse'
-    },
-    description: [
-      {
-        type: 'text',
-        highlight: 'green',
-        value: 'The Lighthouse Project is a not-for-profit organisation in Mumbai that connects working professionals and college students with children from under resourced communities, through one-on-one mentoring in a safe environment.'
-      },
-      {
-        type: 'text',
-        value: 'The app helps to schedule a time and a place to meet with a mentee and has checkin and checkout features to track hours spent for a meeting and providing prior notifications for meetings.'
-      },
-      {
-        type: 'header',
-        value: 'My Contribution :',        
-      },
-      {
-        type: 'text',
-        value: 'Jumped on this project during the middle stages and worked on Home Screen, Create meeting flow, View meetings flow and Notifications.'
-      },
-      {
-        type: 'points',
-        value: [
-          'React Navigation',
-          'RN FCM',
-          'RN Fabric (Crash Reporting)',
-          'RN Actionsheet',
-          'Tcomb form native'
-        ]
-      }
-    ]
-  },
-  benefactory: {
-    name: 'Benefactory',
-    tech: ['laravel', 'vanila-js', 'scss'],
-    //icon: benefactory//Icon,
-    involvement: 'Major',
-    link: {
-      type: 'visit',
-      value: 'http://benefactory.live/'
-    },
-    description: [
-      {
-        type: 'text',
-        highlight: 'green',
-        value: 'Benefactory envisions a future where everyday people have the power to seamlessly act on urgent issues while they’re on the go. Benefactory partner with your frequently visited websites - from shopping to booking a ride - to place our micro-donation ACT widget, that responds to crises dominating the headlines, so you can add a donation to your cart at checkout.'
-      },
-      {
-        type: 'header',
-        value: 'My Contribution :',        
-      },
-      {
-        type: 'text',
-        value: 'Created the whole frontend of this app and designed the UI to be responsive. Used laravels blade to templating engine to create reusable components and defined scss classes to typograph. Used Laravel Mix and webpack for versioning.<br/>Benefactory didn’t have any feature complexity other than UI, they have updated their website so these designs won’t be available.',
-      },
-      {
-        type: 'points',
-        value: [
-          'Flexbox',
-          'Media queries',
-          'Scss',
-          'Css Grid',
-          'Webpack',
-          'Jquery',
-          'Laravel mix',
 
-        ]
-      }
     ]
   },
-  measure: {
-    name: 'Measure',
-    tech: ['android'],
-    //icon: measure//Icon,
-    involvement: 'Major',
-    link: {
-      type: 'download',
-      value: 'https://play.google.com/store/apps/details?id=com.informedtech.measure.app'
+  "REST API": {
+    name: 'REST API',
+    tech: ['Node JS','Typescript','MongoDB','MVC Architecture'],
+    github: {
+      value:'https://github.com/AtulSingh-Emyre/NodeJs-REST-Api'
     },
+    involvement: 'Owner',
     description: [
       {
         type: 'text',
         highlight: 'green',
-        value: 'Measure is an fitness app which helps track habit and weight to provide detailed information about your health so that the user can make informed decisions about their health.<br/>The app is integrated with their weighing scale device so the weight data is directly taken from the device.'
+        value: "The project is a well prepared boiler plate server side code that may be used to create any server on Node JS and Typescript with MVC Architecture."
       },
       {
         type: 'header',
-        value: 'My Contribution :',        
+        value: 'Features :',        
       },
       {
         type: 'text',
-        value: 'Created this apps BLE paring system to connect with the clients smart Weighing scale device using Androids BluetoothGatt Class along with the Charts and rest of the flow except onboarding flow.'
-      },
-      {
-        type: 'text',
-        value: 'The app is not actively maintained now.'
+        value: 'The features of the Rest API include:'
       },
       {
         type: 'points',
         value: [
-          'BLE Integration with their weighing scale device',
-          'MP Charts implementation.',
-          'Local notification implementation.',
-          'MVC architecture',
-          'Butterknife',
-          'Retrofit',
-          'Active Android',
-          'EventBus',
-          'Fabric (Crash Reporting)',
-          'Firebase Notifications'
+          'API built using MVC Architecture on server side',
+          'Use of Typescript to make writing scalable code possible',
+          'Modular code and independant middlewares',
+          'JWT token verification middleware setup',
+          'Model Schemas defined for use',
+          'Object Oriented Programming features used to compartmentalize the code'
         ]
       }
     ]
