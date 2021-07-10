@@ -3,7 +3,7 @@ import React from "react";
 function ResumeContent(props) {
   return (
     <div className="resume-item">
-      <h3 className={props.title ? "resume-title" : "resume-no-title"} style={{textAlign:'left'}}>
+      <h3 className={props.title ? "resume-title" : "resume-no-title"} style={{fontSize:15}}>
         {props.title}
       </h3>
       <p>
