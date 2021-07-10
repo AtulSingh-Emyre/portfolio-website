@@ -117,12 +117,13 @@ function Projects() {
           }
         </Row>
           
-        <Modal show={show} onHide={handleClose} dialogClassName={'projectModalContainerStyles'}>
+        <Modal show={show}  onHide={handleClose} dialogClassName={'projectModalContainerStyles'}>
+        {/* <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-          <Container>
+          <Container> */}
           <ProjectItemDetails projectId={id}/>
-          </Container>
-          </Modal.Body>
+          {/* </Container>
+          </Modal.Body> */}
         </Modal>
       </Container>
     </Container>

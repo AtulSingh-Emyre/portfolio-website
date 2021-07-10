@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row} from 'react-bootstrap';
+import {Container, Modal, Row} from 'react-bootstrap';
 import { projectsListValue } from '../constants/projectsConstants';
 import map from 'lodash/map';
 import { parseNewLine } from '../Utils';
@@ -12,7 +12,10 @@ const DetailsContainer = (props) => {
     const data = projectsListValue[props.id];
     console.log(data);
     return (
+
         <div>
+            <Modal.Header closeButton>
+            <Container>
             <Row style={{justifyContent:'space-between', alignItems:'center'}}>
                 <h1> <strong >{data.name}</strong></h1>{" "} 
                 </Row>
@@ -41,7 +44,10 @@ const DetailsContainer = (props) => {
                 </Button>:<></>}
                 
             </Row>
-
+            </Container>
+            </Modal.Header>
+            <Modal.Body>
+                <Container>
             {map(data.description, (description, index) => {
                 if (description.type === "text") {
                     
@@ -66,6 +72,8 @@ const DetailsContainer = (props) => {
                 }
                 return null;
             })}
+            </Container>
+            </Modal.Body>
         </div>
     );
 }
