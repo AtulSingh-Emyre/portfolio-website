@@ -29,6 +29,12 @@ import snapTeam4 from '../../Assets/images/projectImages/Gymkhana/4.jpg';
 import snapTeam5 from '../../Assets/images/projectImages/Gymkhana/5.jpg';
 import snapTeam6 from '../../Assets/images/projectImages/Gymkhana/6.jpg';
 
+import Tradycoon1 from '../../Assets/images/projectImages/Tradycoon/1.jpeg';
+import Tradycoon2 from '../../Assets/images/projectImages/Tradycoon/2.jpg';
+import Tradycoon3 from '../../Assets/images/projectImages/Tradycoon/3.jpeg';
+import Tradycoon4 from '../../Assets/images/projectImages/Tradycoon/4.jpg';
+import Tradycoon5 from '../../Assets/images/projectImages/Tradycoon/5.jpg';
+import Tradycoon6 from '../../Assets/images/projectImages/Tradycoon/6.jpg';
 
 const projectImages = {
 
@@ -52,6 +58,39 @@ const projectImages = {
       thumbnailHeight: 200
     },
     
+  ],
+  'Tradycoon': [
+    {
+      src: Tradycoon1, 
+      thumbnail: Tradycoon1,
+      thumbnailWidth: 220,
+      thumbnailHeight:100
+    },{
+      src: Tradycoon2, 
+      thumbnail: Tradycoon2,
+      thumbnailWidth: 100,
+      thumbnailHeight:220
+    },{
+      src: Tradycoon3, 
+      thumbnail: Tradycoon3,
+      thumbnailWidth: 200,
+      thumbnailHeight:220
+    },{
+      src: Tradycoon4, 
+      thumbnail: Tradycoon4,
+      thumbnailWidth: 120,
+      thumbnailHeight:260
+    },{
+      src: Tradycoon5, 
+      thumbnail: Tradycoon5,
+      thumbnailWidth: 150,
+      thumbnailHeight:350
+    },{
+      src: Tradycoon6, 
+      thumbnail: Tradycoon6,
+      thumbnailWidth: 150,
+      thumbnailHeight:300
+    }
   ],
   'Summer of Innovation': [
     {

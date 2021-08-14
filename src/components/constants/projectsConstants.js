@@ -279,7 +279,7 @@ export const projectsListValue = {
     involvement: 'Owned',
     link: {
       name: 'Download App',
-      value: 'https://drive.google.com/open?id=1Fo3FSfu7NHTJ60Y0uQcWYpv6mX1Tetqe'
+      value: 'https://play.google.com/store/apps/details?id=com.tradycoon.app'
     },
     description: [
       {
