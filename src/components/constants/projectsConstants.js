@@ -293,7 +293,7 @@ export const projectsListValue = {
       },
       {
         type: 'text',
-        value: 'The application has crossed 1k users and is being used in real time. The download link of playstore has been provided for Android users. However, it is also available and fully functional on IOS app-store.'
+        value: 'The application has crossed 2k users and is being used in real time. The download link of playstore has been provided for Android users. However, it is also available and fully functional on IOS app-store.'
       },
       {
         type: 'points',
