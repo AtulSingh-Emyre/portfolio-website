@@ -23,7 +23,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section homepagecontentPaddingFix" id="home" style={{paddingTop:0,marginTop:0}}>
-        <Particle />
+        {/* <Particle /> */}
         <Container className="home-content" style={{paddingTop:0,marginTop:0}}>
           <Row style={{paddingTop:0,marginTop:0}}>
             <Col md={7} className="home-header">
