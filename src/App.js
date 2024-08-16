@@ -31,7 +31,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/portfolio-website/" element={<Home />} />
+          <Route path="https://AtulSingh-Emyre.github.io/portfolio-website/" element={<Home />} />
           <Route path="/portfolio-website/project" element={<Projects />} />
           <Route path="/portfolio-website/about" element={<About />} />
           <Route path="/portfolio-website/resume" element={<Resume />} />
