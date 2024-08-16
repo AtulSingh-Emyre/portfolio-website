@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  
+  const p = "https://AtulSingh-Emyre.github.io/portfolio-website";
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
@@ -31,7 +31,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path={p+"/"} element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
