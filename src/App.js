@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,7 +31,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="https://AtulSingh-Emyre.github.io/portfolio-website/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio-website/project" element={<Projects />} />
           <Route path="/portfolio-website/about" element={<About />} />
           <Route path="/portfolio-website/resume" element={<Resume />} />

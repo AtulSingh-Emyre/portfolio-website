@@ -1,6 +1,6 @@
 {
-  "homepage": "https://AtulSingh-Emyre.github.io/portfolio-website/",
   "name": "portfolio",
+  "homepage": "https://AtulSingh-Emyre.github.io/portfolio-website/#/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
