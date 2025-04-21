@@ -18,7 +18,8 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Currently doing my B-Tech at <b className="purple">Indian Institute of Technology, Dharwad</b>, I am a coding enthusiast who loves to <b className="purple">develop polished and scalable products</b> which can be used in real-time. 
+              Currently having 2 years of experience in <b className="purple">Software Engineering</b> at <b className="purple">6D Technologies, Bangalore</b>, I have worked on various technologies like AWS, Linux, ReactJS, Kubectl. <br/>
+              Having done my B-Tech at <b className="purple">Indian Institute of Technology, Dharwad</b>, I am a coding enthusiast who loves to <b className="purple">develop polished and scalable products</b> which can be used in real-time. 
               <br />
               <br />I am fluent in classics like{' '}
               <i>
@@ -28,7 +29,7 @@ function Home2() {
               <br />
               My love to code brought my interest in &nbsp;
               <i>
-                <b className="purple">Competitive Programming </b> and
+                <b className="purple">Competitive Programming </b>, <b className="purple">Cloud Computing using AWS </b> and
                 also in{" "}
                 <b className="purple">
                   Full Stack Development.
