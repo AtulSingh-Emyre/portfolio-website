@@ -39,22 +39,37 @@ function Resume() {
           </Button> */}
         </Row>
         <Row className="resume">
+            
+          
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Organizations</h3>
+          <h3 className="resume-title">Work Experience</h3>
             <Resumecontent
-              title="OSS | Owner"
-              date="May 2021 - present"
+              title="Implementation Software Engineer, 6d Technologies"
+              date="May 2023 - PRE"
               content={[
-                "Promoted to Owner of the Open Student Society Organization on Github as on May 2021",
+                "Worked on DevOps to develop CICD pipeline scripts in Gitlab & Ansible for various microservices.",
+                "Worked on Databases like MySql and MongoDB for creating reports and scheduled procedures.",
+                "Worked on Building, Integrating and Debugging 3 interconnected modules and microservices in development and production environments based on provided High Level Documents involving AWS & Kubernetes.",
               ]}
             />
             <Resumecontent
-              title="Coding Club | Member"
-              date="September 2019 - present"
+              title="R&D Engineer, McAfee (Intern)"
+              date="Feb 2022 - Sep 2022"
               content={[
-                "Member and contributor of The Coding Club at IIT Dharwad",
+                "Worked as the sole developer in developing a proof of concept (android application in Java) which aims to provide cybersecurity during transactions on banking applications on android devices.",
+                "Researched and developed features related to ensuring protection from snooping threats, overlay threats, malware threats, network threats, VPN threats and keyboard threats during transactions.",
+                "Have written scalable, clean, secure and well maintained Java code while also maintaining the user experience aspect by heavily optimizing the scan time and using standard UI practices from scratch."
               ]}
             />
+            <Resumecontent
+              title="Android Developer, Holagraph (Intern)"
+              date="Nov 2021 - Jan 2022"
+              content={[
+                "Developed the complete authentication and Job Search Module (CRUD operations) under 3 months using React Native and Typescript along with Version Control in MERN full stack.",
+              ]}
+            />
+
+
             <h3 className="resume-title">Position of Responsibilities</h3>
             <Resumecontent
               title="General Secretary, Technical Affairs - IIT Dharwad"
@@ -102,6 +117,22 @@ function Resume() {
               date="2007 - 2017"
               content={["Precentage: 10 CGPA"]}
             />
+            <h3 className="resume-title">Organizations</h3>
+            <Resumecontent
+              title="OSS | Owner"
+              date="May 2021 - present"
+              content={[
+                "Promoted to Owner of the Open Student Society Organization on Github as on May 2021",
+              ]}
+            />
+            <Resumecontent
+              title="Coding Club | Member"
+              date="September 2019 - present"
+              content={[
+                "Member and contributor of The Coding Club at IIT Dharwad",
+              ]}
+            />
+            
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title="LeetCode"
